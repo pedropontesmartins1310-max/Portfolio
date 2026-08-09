@@ -575,8 +575,9 @@ body.light-theme .profile-card {
 .skills-grid,
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
+  align-items: stretch;
 }
 
 .skill-card,
@@ -646,6 +647,8 @@ body.light-theme .profile-card {
 .project-card {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-width: 0;
 }
 
 .project-image {

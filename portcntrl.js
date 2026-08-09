@@ -11,6 +11,14 @@ const modalClose = document.querySelector('.modal-close');
 const projectButtons = document.querySelectorAll('.project-link');
 const contactForm = document.querySelector('.contact-form');
 
+function syncProjectCards() {
+  const cards = document.querySelectorAll('.project-card');
+  cards.forEach((card) => {
+    card.classList.remove('hidden');
+    card.style.display = '';
+  });
+}
+
 const projectData = {
   nova: {
     title: 'Nova Commerce',
@@ -101,17 +109,27 @@ const navObserver = new IntersectionObserver(
 
 document.querySelectorAll('main section[id]').forEach((section) => navObserver.observe(section));
 
+function applyProjectFilter(button) {
+  filterButtons.forEach((btn) => btn.classList.toggle('active', btn === button));
+  const filter = button.dataset.filter;
+
+  projectCards.forEach((card) => {
+    const categories = card.dataset.category || '';
+    const matches = filter === 'all' || categories.includes(filter);
+    card.classList.toggle('hidden', !matches);
+  });
+}
+
+syncProjectCards();
+
 filterButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    filterButtons.forEach((btn) => btn.classList.toggle('active', btn === button));
-    const filter = button.dataset.filter;
-
-    projectCards.forEach((card) => {
-      const categories = card.dataset.category || '';
-      const matches = filter === 'all' || categories.includes(filter);
-      card.classList.toggle('hidden', !matches);
-    });
+    applyProjectFilter(button);
   });
+
+  if (button.classList.contains('active')) {
+    applyProjectFilter(button);
+  }
 });
 
 function openProject(key) {
