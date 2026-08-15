@@ -1,364 +1,372 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Interactive portfolio website for a creative developer showcasing projects, skills, and contact details."
-    />
-    <title>Pedro Pontes Martins | Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="Portvisuals.css" />
-    <script defer src="portcntrl.js"></script>
-  </head>
-  <body>
-    <div class="page-shell">
-      <div class="bg-orb orb-1"></div>
-      <div class="bg-orb orb-2"></div>
-      <div class="bg-grid"></div>
 
-      <header class="site-header">
-        <div class="container nav-wrap">
-          <a href="#home" class="brand" aria-label="Home">
-            <span class="brand-mark">P</span>
-            <span class="brand-text">Pedro</span>
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Interactive portfolio website for a creative developer showcasing projects, skills, and contact details." />
+  <title>Pedro Pontes Martins | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="Portvisuals.css" />
+  <script defer src="portcntrl.js"></script>
+</head>
 
-          <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+<body>
+  <div class="page-shell">
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
 
-          <nav class="site-nav" aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-          </nav>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a href="#home" class="brand" aria-label="Home">
+          <span class="brand-mark">P</span>
+          <span class="brand-text">Pedro</span>
+        </a>
 
-          <button class="theme-toggle" aria-label="Toggle theme">
-            <i class="fa-solid fa-moon"></i>
-          </button>
-        </div>
-      </header>
-
-      <main>
-        <section id="home" class="hero section">
-          <div class="container hero-layout">
-            <div class="hero-copy reveal">
-              <span class="eyebrow">Learning and building every day</span>
-              <h1>
-                I create <span>digital experiences</span>
-              </h1>
-              <p>
-                I’m a young developer learning by building, designing interfaces, and creating
-                projects that help me grow my skills in UX, frontend development, and creative problem-solving.
-              </p>
-
-              <div class="cta-row">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
-              </div>
-
-              <ul class="mini-stats" aria-label="Key stats">
-                <li>
-                  <strong>3</strong>
-                  <span>Years learning</span>
-                </li>
-                <li>
-                  <strong>11</strong>
-                  <span>Projects</span>
-                </li>
-                <li>
-                  <strong>0</strong>
-                  <span>Clients</span>
-                </li>
-              </ul>
-            </div>
-
-            <div class="hero-visual reveal">
-              <div class="profile-card glass">
-                <div class="profile-header">
-                  <div class="avatar-ring">
-                    <div class="avatar">PM</div>
-                  </div>
-                  <div class="status-pill">
-                    <span class="dot"></span>
-                    Open to work
-                  </div>
-                </div>
-
-                <div class="profile-body">
-                  <div class="info-block">
-                    <span class="label">Currently</span>
-                    <strong>Learner</strong>
-                  </div>
-                  <div class="info-block">
-                    <span class="label">Specialty</span>
-                    <strong>To be determined</strong>
-                  </div>
-                </div>
-
-                <div class="signal-bars" aria-label="Performance metrics">
-                  <span style="--i: 1"></span>
-                  <span style="--i: 2"></span>
-                  <span style="--i: 3"></span>
-                  <span style="--i: 4"></span>
-                  <span style="--i: 5"></span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="about" class="section about">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">About me</span>
-              <h2>Turning bright ideas into usable experiences.</h2>
-            </div>
-
-            <div class="about-grid">
-              <div class="about-copy reveal">
-                <p>
-                  I’m Pedro, a young developer focused on learning and improving my skills in UI/UX,
-                  frontend development, and digital creativity. I enjoy building clean, engaging interfaces
-                  and turning ideas into interactive experiences.
-                </p>
-                <p>
-                  I’m still discovering my strengths, but I’m passionate about design, problem-solving,
-                  and creating work that looks good, feels intuitive, and helps me keep growing as a developer.
-                </p>
-                <div class="about-highlights">
-                  <div class="highlight-item">
-                    <i class="fa-solid fa-rocket"></i>
-                    <span>Product thinking</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="fa-solid fa-sparkles"></i>
-                    <span>Design systems</span>
-                  </div>
-                  <div class="highlight-item">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Clean code</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="timeline reveal">
-                <div class="timeline-item">
-                  <span class="time">2024</span>
-                  <div>
-                    <h3>Started learning</h3>
-                    <p>Started understanding the basics of web design, frontend development, and digital creativity.</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="time">2025</span>
-                  <div>
-                    <h3>Started building my projects</h3>
-                    <p>Created my own interfaces and personal projects to practice design and development skills.</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <span class="time">2026</span>
-                  <div>
-                    <h3>Still learning and developing</h3>
-                    <p>Continuing to improve my abilities by building, studying, and exploring new creative ideas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="skills" class="section skills">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">Skills</span>
-              <h2>Built for speed, clarity, and scale.</h2>
-            </div>
-
-            <div class="skills-grid">
-              <div class="skill-card reveal">
-                <h3>Design & UX</h3>
-                <ul>
-                  <li>design</li>
-                  <li>Wireframing</li>
-                  <li>UI Design Systems</li>
-                  <li>Prototyping</li>
-                </ul>
-              </div>
-
-              <div class="skill-card reveal">
-                <h3>Front-End</h3>
-                <ul>
-                  <li>HTML5</li>
-                  <li>CSS3 </li>
-                  <li>JavaScript </li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-        </section>
-
-        <section id="projects" class="section projects">
-          <div class="container">
-            <div class="section-heading reveal">
-              <span class="eyebrow">Selected work</span>
-              <h2>Projects built to impress and perform.</h2>
-            </div>
-
-            <div class="projects-grid">
-              <article class="project-card reveal" data-category="web product">
-                <div class="project-image gradient-1">
-                  <span class="project-badge">Math Simulator</span>
-                </div>
-                <div class="project-content">
-                  <div class="project-meta">
-                    <span>JavaScript</span>
-                    <span>Mathematics</span>
-                    <span>Simulation</span>
-                  </div>
-                  <h3>Collatz v2</h3>
-                  <p>This is one of my first serious projects, it is a simulator for a mathematical theory developed by Lothar Collatz.</p>
-                  <a class="project-link" href="https://pedropontesmartins1310-max.github.io/Collatz-v2/" target="_blank" rel="noreferrer">Open project</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal" data-category="creative web app">
-                <div class="project-image gradient-2">
-                  <span class="project-badge">Screensaver</span>
-                </div>
-                <div class="project-content">
-                  <div class="project-meta">
-                    <span>JavaScript</span>
-                    <span>Animation</span>
-                    <span>Design</span>
-                  </div>
-                  <h3>Japanese Symbol Screensaver</h3>
-                  <p>A simple screensaver with Japanese symbols, with changeable colors and speed.</p>
-                  <a class="project-link" href="https://pedropontesmartins1310-max.github.io/Screen_saver/" target="_blank" rel="noreferrer">Open project</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal" data-category="game">
-                <div class="project-image gradient-3">
-                  <span class="project-badge">Medieval Adventure</span>
-                </div>
-                <div class="project-content">
-                  <div class="project-meta">
-                    <span>JavaScript</span>
-                    <span>Game</span>
-                    <span>Story</span>
-                  </div>
-                  <h3>The Knight's Shop</h3>
-                  <p>My longest game so far, enter the medieval realm, but be aware of its dangers...</p>
-                  <a class="project-link" href="https://pedropontesmartins1310-max.github.io/the-Kights-shop/" target="_blank" rel="noreferrer">Open project</a>
-                </div>
-              </article>
-
-              <article class="project-card reveal" data-category="game">
-                <div class="project-image gradient-4">
-                  <span class="project-badge">Arcade</span>
-                </div>
-                <div class="project-content">
-                  <div class="project-meta">
-                    <span>JavaScript</span>
-                    <span>Game</span>
-                    <span>Arcade</span>
-                  </div>
-                  <h3>Space Invaders Inspired Game</h3>
-                  <p>This is one of my 5 simple games and it is an space invaders inspired game; the other games are available on my GitHub.</p>
-                  <a class="project-link" href="https://pedropontesmartins1310-max.github.io/GAMES/" target="_blank" rel="noreferrer">Open project</a>
-                </div>
-              </article>
-            </div>
-          </div>
-           <span class="project-badge">Retro Game</span>
-                </div>
-                <div class="project-content">
-                  <div class="project-meta">
-                    <span>JavaScript</span>
-                    <span>Retro game</span>
-                    <span>Nostalgia</span>
-                  </div>
-                  <h3>Square-Man</h3>
-                  <p>This is (not) Pac-Man...Batteries not included.</p>
-                  <a class="project-link" href=https://pedropontesmartins1310-max.github.io/Square-man/ target="_blank" rel="noreferrer">Open project</a>
-                </div>
-              </article>
-        </section>
-
-        <section id="contact" class="section contact">
-          <div class="container contact-wrap reveal">
-            <div class="contact-copy">
-              <span class="eyebrow">Contact</span>
-              <h2>Let’s create something memorable.</h2>
-              <p>
-                I’m always open to learning, collaborating, and improving my work through new ideas,
-                creative projects, and opportunities to grow as a developer.
-              </p>
-              <ul class="contact-list">
-                <li><i class="fa-solid fa-envelope"></i> hello@yourname.dev</li>
-                <li><i class="fa-solid fa-location-dot"></i> Remote / Worldwide</li>
-              </ul>
-            </div>
-
-            <form class="contact-form">
-              <div class="input-group">
-                <label for="name">Name</label>
-                <input id="name" type="text" placeholder="Your name" />
-              </div>
-              <div class="input-group">
-                <label for="email">Email</label>
-                <input id="email" type="email" placeholder="you@example.com" />
-              </div>
-              <div class="input-group">
-                <label for="message">Project brief</label>
-                <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Send inquiry</button>
-            </form>
-          </div>
-        </section>
-      </main>
-
-      <footer class="site-footer">
-        <div class="container footer-wrap">
-          <p>© 2026 Pedro Pontes Martins. Crafted with passion.</p>
-          <div class="socials" aria-label="Social media links">
-            <a href="https://github.com/pedropontesmartins1310-max" target="_blank" rel="noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
-          </div>
-        </div>
-      </footer>
-    </div>
-
-    <div class="modal" aria-hidden="true" role="dialog" aria-modal="true">
-      <div class="modal-backdrop" data-close="true"></div>
-      <div class="modal-panel">
-        <button class="modal-close" aria-label="Close modal">
-          <i class="fa-solid fa-xmark"></i>
+        <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-        <div class="modal-content"></div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="theme-toggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero section">
+        <div class="container hero-layout">
+          <div class="hero-copy reveal">
+            <span class="eyebrow">Learning and building every day</span>
+            <h1>
+              I create <span>digital experiences</span>
+            </h1>
+            <p>
+              I’m a young developer learning by building, designing interfaces, and creating
+              projects that help me grow my skills in UX, frontend development, and creative problem-solving.
+            </p>
+
+            <div class="cta-row">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Let’s Talk</a>
+            </div>
+
+            <ul class="mini-stats" aria-label="Key stats">
+              <li>
+                <strong>3</strong>
+                <span>Years learning</span>
+              </li>
+              <li>
+                <strong>11</strong>
+                <span>Projects</span>
+              </li>
+              <li>
+                <strong>0</strong>
+                <span>Clients</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal">
+            <div class="profile-card glass">
+              <div class="profile-header">
+                <div class="avatar-ring">
+                  <div class="avatar">PM</div>
+                </div>
+                <div class="status-pill">
+                  <span class="dot"></span>
+                  Open to work
+                </div>
+              </div>
+
+              <div class="profile-body">
+                <div class="info-block">
+                  <span class="label">Currently</span>
+                  <strong>Learner</strong>
+                </div>
+                <div class="info-block">
+                  <span class="label">Specialty</span>
+                  <strong>To be determined</strong>
+                </div>
+              </div>
+
+              <div class="signal-bars" aria-label="Performance metrics">
+                <span style="--i: 1"></span>
+                <span style="--i: 2"></span>
+                <span style="--i: 3"></span>
+                <span style="--i: 4"></span>
+                <span style="--i: 5"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">About me</span>
+            <h2>Turning bright ideas into usable experiences.</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-copy reveal">
+              <p>
+                I’m Pedro, a young developer focused on learning and improving my skills in UI/UX,
+                frontend development, and digital creativity. I enjoy building clean, engaging interfaces
+                and turning ideas into interactive experiences.
+              </p>
+              <p>
+                I’m still discovering my strengths, but I’m passionate about design, problem-solving,
+                and creating work that looks good, feels intuitive, and helps me keep growing as a developer.
+              </p>
+              <div class="about-highlights">
+                <div class="highlight-item">
+                  <i class="fa-solid fa-rocket"></i>
+                  <span>Product thinking</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-sparkles"></i>
+                  <span>Design systems</span>
+                </div>
+                <div class="highlight-item">
+                  <i class="fa-solid fa-code"></i>
+                  <span>Clean code</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="timeline reveal">
+              <div class="timeline-item">
+                <span class="time">2024</span>
+                <div>
+                  <h3>Started learning</h3>
+                  <p>Started understanding the basics of web design, frontend development, and digital creativity.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time">2025</span>
+                <div>
+                  <h3>Started building my projects</h3>
+                  <p>Created my own interfaces and personal projects to practice design and development skills.</p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <span class="time">2026</span>
+                <div>
+                  <h3>Still learning and developing</h3>
+                  <p>Continuing to improve my abilities by building, studying, and exploring new creative ideas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Skills</span>
+            <h2>Built for speed, clarity, and scale.</h2>
+          </div>
+
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <h3>Design & UX</h3>
+              <ul>
+                <li>design</li>
+                <li>Wireframing</li>
+                <li>UI Design Systems</li>
+                <li>Prototyping</li>
+              </ul>
+            </div>
+
+            <div class="skill-card reveal">
+              <h3>Front-End</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 </li>
+                <li>JavaScript </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="eyebrow">Selected work</span>
+            <h2>Projects built to impress and perform.</h2>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card reveal" data-category="web product">
+              <div class="project-image gradient-1">
+                <span class="project-badge">Math Simulator</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>JavaScript</span>
+                  <span>Mathematics</span>
+                  <span>Simulation</span>
+                </div>
+                <h3>Collatz v2</h3>
+                <p>This is one of my first serious projects, it is a simulator for a mathematical theory developed by
+                  Lothar Collatz.</p>
+                <a class="project-link" href="https://pedropontesmartins1310-max.github.io/Collatz-v2/" target="_blank"
+                  rel="noreferrer">Open project</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="creative web app">
+              <div class="project-image gradient-2">
+                <span class="project-badge">Screensaver</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>JavaScript</span>
+                  <span>Animation</span>
+                  <span>Design</span>
+                </div>
+                <h3>Japanese Symbol Screensaver</h3>
+                <p>A simple screensaver with Japanese symbols, with changeable colors and speed.</p>
+                <a class="project-link" href="https://pedropontesmartins1310-max.github.io/Screen_saver/"
+                  target="_blank" rel="noreferrer">Open project</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="game">
+              <div class="project-image gradient-3">
+                <span class="project-badge">Medieval Adventure</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>JavaScript</span>
+                  <span>Game</span>
+                  <span>Story</span>
+                </div>
+                <h3>The Knight's Shop</h3>
+                <p>My longest game so far, enter the medieval realm, but be aware of its dangers...</p>
+                <a class="project-link" href="https://pedropontesmartins1310-max.github.io/the-Kights-shop/"
+                  target="_blank" rel="noreferrer">Open project</a>
+              </div>
+            </article>
+
+            <article class="project-card reveal" data-category="game">
+              <div class="project-image gradient-4">
+                <span class="project-badge">Retro game</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>JavaScript</span>
+                  <span>Game</span>
+                  <span>Arcade</span>
+                </div>
+                <h3>Space Invaders Inspired Game</h3>
+                <p>This is one of my 5 simple games and it is an space invaders inspired game; the other games are
+                  available on my GitHub.</p>
+                <a class="project-link" href="https://pedropontesmartins1310-max.github.io/GAMES/" target="_blank"
+                  rel="noreferrer">Open project</a>
+              </div>
+            </article>
+          </div>
+        <article class="project-card reveal" data-category="arcade">
+              <div class="project-image gradient-3">
+                <span class="project-badge">Retro game</span>
+              </div>
+              <div class="project-content">
+                <div class="project-meta">
+                  <span>JavaScript</span>
+                  <span>Game</span>
+                  <span>nostalgic</span>
+                </div>
+                <h3>Square-Man</h3>
+                <p>This is (not) Pac-Man.</p>
+                <a class="project-link" href="https://pedropontesmartins1310-max.github.io/GAMES/" target="_blank"
+                  rel="noreferrer">Open project</a>
+              </div>
+            </article>
+  </div>
+        
+<div>
+  </article>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container contact-wrap reveal">
+      <div class="contact-copy">
+        <span class="eyebrow">Contact</span>
+        <h2>Let’s create something memorable.</h2>
+        <p>
+          I’m always open to learning, collaborating, and improving my work through new ideas,
+          creative projects, and opportunities to grow as a developer.
+        </p>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-envelope"></i> hello@yourname.dev</li>
+          <li><i class="fa-solid fa-location-dot"></i> Remote / Worldwide</li>
+        </ul>
+      </div>
+
+      <form class="contact-form">
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="Your name" />
+        </div>
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="you@example.com" />
+        </div>
+        <div class="input-group">
+          <label for="message">Project brief</label>
+          <textarea id="message" rows="5" placeholder="Tell me about your project..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send inquiry</button>
+      </form>
+    </div>
+  </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Pedro Pontes Martins. Crafted with passion.</p>
+      <div class="socials" aria-label="Social media links">
+        <a href="https://github.com/pedropontesmartins1310-max" target="_blank" rel="noreferrer" aria-label="GitHub"><i
+            class="fa-brands fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
       </div>
     </div>
-  </body>
+  </footer>
+  </div>
+
+  <div class="modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close="true"></div>
+    <div class="modal-panel">
+      <button class="modal-close" aria-label="Close modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-content"></div>
+    </div>
+  </div>
+</body>
+
 </html>

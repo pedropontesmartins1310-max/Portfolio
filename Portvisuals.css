@@ -54,7 +54,7 @@ body {
   transition: background 0.35s ease, color 0.35s ease;
 }
 
-h1, h2, h3, h4, h5, .brand-text, .eyebrow, .btn, .status-pill, .time {
+h1, h2, h3, h4, .brand-text, .eyebrow, .btn, .status-pill, .time {
   font-family: "Orbitron", "Segoe UI", sans-serif;
   letter-spacing: 0.04em;
 }
@@ -582,7 +582,7 @@ body.light-theme .profile-card {
 
 .skill-card,
 .project-card {
-  background: rgba(126, 247, 165, 0.03);
+  background: rgba(62, 65, 62, 0.171);
   border: 1px solid var(--line);
   border-radius: 1.5rem;
   overflow: hidden;
@@ -592,7 +592,7 @@ body.light-theme .profile-card {
 .skill-card:hover,
 .project-card:hover {
   transform: translateY(-6px);
-  border-color: rgba(126, 247, 165, 0.5);
+  border-color: rgba(0, 255, 0, 0.288);
   box-shadow: 0 0 24px rgba(126, 247, 165, 0.12), var(--shadow);
 }
 
@@ -682,6 +682,9 @@ body.light-theme .profile-card {
 
 .gradient-3 {
   background: linear-gradient(135deg, rgba(126, 247, 165, 0.78), rgba(210, 255, 95, 0.48));
+}
+
+.gredient-5{ background: linear-gradient(135deg, rgba(126, 247, 165, 0.78), rgba(210, 255, 95, 0.48));
 }
 
 .project-badge {
