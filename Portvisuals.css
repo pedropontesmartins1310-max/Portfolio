@@ -54,7 +54,7 @@ body {
   transition: background 0.35s ease, color 0.35s ease;
 }
 
-h1, h2, h3, h4, .brand-text, .eyebrow, .btn, .status-pill, .time {
+h1, h2, h3, h4, h5, .brand-text, .eyebrow, .btn, .status-pill, .time {
   font-family: "Orbitron", "Segoe UI", sans-serif;
   letter-spacing: 0.04em;
 }
